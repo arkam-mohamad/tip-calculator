@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="logo" class="logo">
+  </header>
+  <main>
+    <div class="content">
+      <div class="container">
+        <p>Bill <span>Can't be zero</span></p>
+        <div class="amount">
+          <img src="./images/icon-dollar.svg" alt="icon-dollar">
+          <input type="number" id="amount" placeholder="0">
+        </div>
+      </div>
+      <div>
+        <p>Select Tip %</p>
+        <div class="percentages">
+          <button class="percentage" value="0.05">5%</button>
+          <button class="percentage" value="0.1">10%</button>
+          <button class="percentage" value="0.15" class="active">15%</button>
+          <button class="percentage" value="0.25">25%</button>
+          <button class="percentage" value="0.50">50%</button>
+          <button value="" class="custom">Custom</button>
+          <input type="number" id="custom" class="display-none">
+        </div>
+      </div>
+      <div class="container">
+        <p>Number of People <span>Can't be zero</span></p>
+        <div class="count">
+          <img src="./images/icon-person.svg" alt="icon-person">
+          <input type="number" id="count" placeholder="0">
+        </div>
+      </div>
+    </div>
+
+    <div class="result">
+      <div>
+        <div>
+          <div class="tip">
+            <h3>Tip Amount</h3>
+            <small>/ person</small>
+          </div>
+          <h1 id="singleTip">$0.00</h1>
+        </div>
+        <div>
+          <div class="total">
+            <h3>Total</h3>
+            <small>/ person</small>
+          </div>
+          <h1 id="totalTip">$0.00</h1>
+        </div>
+      </div>
+      <button class="reset">RESET</button>
+    </div>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
