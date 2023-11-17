@@ -1,1 +1,136 @@
+*{
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+}
+body{
+  background-color: hsl(185, 41%, 84%);
+}
+header{
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+}
+main{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 20px;
+}
+.content > div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+p{
+  color: hsl(183, 100%, 15%);
+  display: flex;
+  justify-content: space-between;
+}
+span{
+  color: red;
+  visibility: hidden;
+}
+.error span{
+  visibility: visible;
+}
+.amount, .count{
+  background-color: hsl(189, 41%, 97%);
+}
+.content > div > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+input{
+  text-align: right;
+  border: 0;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+}
+input::placeholder{
+  color: hsl(184, 14%, 56%);
+}
+.percentages{
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.percentages button{
+  font-size: 24px;
+  min-width: 100px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.percentages button:hover{
+  background-color: hsl(172, 68%, 72%);
+  color: hsl(183, 100%, 15%);
+}
+button.active{
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.percentages .custom{
+  font-size: 20px;
+  padding: 5px 0;
+}
+#custom{
+  width: 95px;
+  border: 2px solid hsl(172, 67%, 45%);
+  border-radius: 5px;
+}
+.result{
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.result > div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.result > div > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h3{
+  color: white;
+}
+small{
+  color: hsl(184, 14%, 56%);
+}
+h1{
+  color: hsl(172, 67%, 45%);
+  font-size: 48px;
+}
+.reset{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: hsl(172, 67%, 45%);
+}
+.reset:hover{
+  cursor: pointer;
+  background-color: hsl(172, 68%, 72%);
+}
 
+.display-none{
+  display: none;
+}
